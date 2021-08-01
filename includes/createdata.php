@@ -5,23 +5,7 @@ require 'database.php';
 //VIN number that is stored in session is used for API data from NHTA.
 
 $vinnumber = $_SESSION['vinnumber'];
-
-$ch = curl_init();
-
-$url = "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVin/" . $vinnumber . "?format=json";
-
-curl_setopt($ch, CURLOPT_URL, $url);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-
-$resp = curl_exec($ch);
-
-if ($e = curl_error($ch)) {
-    echo $e;
-} else {
-    $decoded = json_decode($resp, true);
-}
-
-curl_close($ch);
+$decoded = $_SESSION['vindata'];
 
 //Prepared Statement with error handlers for adding variables into table.
 

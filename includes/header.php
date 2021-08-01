@@ -17,7 +17,7 @@ session_start();
                 <li><a href="index.php">Home</a></li>
                 <!-- <li><a href="login.php">Login</a></li> -->
                 <li><a href="datadisplay.php">Data</a></li>
-                <li><a href="">Edit Data</a></li>
+                <li><a href="modify.php">Edit Data</a></li>
             </ul>
         </nav>
     </header>

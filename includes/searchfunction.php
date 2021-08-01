@@ -39,6 +39,8 @@ if (empty($vinnumber)) {
 
     curl_close($ch);
 
+    $_SESSION['vindata'] = $decoded;
+
     $vin_data_array = $decoded['Results'];
     $vin_value_array = [6, 8, 9, 12, 21, 35, 49, 47, 93, 95];
 
