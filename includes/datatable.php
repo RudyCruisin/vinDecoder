@@ -1,6 +1,8 @@
 <?php
 require 'database.php';
 
+//Grabbing data from mysql and generating them in a table element.
+
 $sql = "SELECT * FROM vinlist";
 $result = mysqli_query($conn, $sql) or die("Bad Query: $sql");
 

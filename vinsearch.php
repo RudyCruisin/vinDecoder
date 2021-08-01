@@ -9,9 +9,13 @@
 
 <?php
 
+//Clicking the search button runs searchfunction.php which handles API call for VIN input by user.
+
 if (isset($_POST['inputvin'])) {
     require 'includes/searchfunction.php';
 }
+
+//Clicking the add to database button inserts data to mysql table.
 
 if (isset($_POST['writeData'])) {
     require 'includes/createdata.php';

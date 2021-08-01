@@ -2,7 +2,11 @@
 
 require 'database.php';
 
-$vinnumber = $_POST['inputvin'];
+//WORK IN PROGRESS. Use this file to generate an array of all 130+ elements found in NHTSA API.
+//Vehicles will likely need to be classified differently depending on certain criteria.
+//Semi-trailer VINs have different fields than Car VINs.
+
+$vinnumber = $_SESSION['vinnumber'];
 
 $ch = curl_init();
 
@@ -28,13 +32,10 @@ foreach ($vindatarray as $VariableId => $Value){
 	echo "$VariableId = $Value<br>";
 }
 
-
-
 print_r($vindatarray[6]);
 
 // print_r($array);
- 
- 
+  
 $createTableStatement = "CREATE TABLE IF NOT EXISTS `vin_data_full`";
 $createTableStatement .= '(';
 $createTableStatement .= '`vin` VARCHAR(255) NOT NULL,';

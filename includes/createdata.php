@@ -2,7 +2,7 @@
 
 require 'database.php';
 
-//Use input VIN to submit request to NHSTA API
+//VIN number that is stored in session is used for API data from NHTA.
 
 $vinnumber = $_SESSION['vinnumber'];
 
@@ -23,7 +23,7 @@ if ($e = curl_error($ch)) {
 
 curl_close($ch);
 
-//Prepared Statement for adding variables into table.
+//Prepared Statement with error handlers for adding variables into table.
 
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
