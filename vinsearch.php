@@ -2,7 +2,7 @@
     <h1>Search for VIN Data</h1>
 
     <form action="" method="post">
-        <input type="text" name="inputvin" placeholder="VIN NUMBER">
+        <input type="text" name="inputvin" placeholder="ENTER VIN NUMBER">
         <button type="submit" name="submit">SEARCH</button>
     </form>
 </div>
