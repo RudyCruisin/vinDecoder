@@ -79,3 +79,25 @@ html {
     background-color: #000000;
     color: #ffffff;
   }
+
+table {
+  margin: 0 auto;
+  border: 2px double black;
+  text-align: center;
+  border-spacing: 2px;
+  max-width: 90%;
+}
+
+td {
+  border: 1px solid black;  
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+h3 {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}

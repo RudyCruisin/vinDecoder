@@ -1,5 +1,6 @@
 <?php
 require_once 'includes/database.php';
+session_start();
 ?>
 <html>
 
@@ -15,7 +16,7 @@ require_once 'includes/database.php';
             <ul>
                 <li><a href="index.php">Home</a></li>
                 <li><a href="login.php">Login</a></li>
-                <li><a href="register.php">Register</a></li>
+                <li><a href="datadisplay.php">Data</a></li>
             </ul>
         </nav>
     </header>
