@@ -8,6 +8,7 @@ html {
     padding: 0;
     margin: 0;
     background-color:#527077;
+    background-image: url("photos/pexels-mudassir-ali-2680270.jpg");
   }
   
   header {
@@ -93,6 +94,7 @@ html {
 
 table {
   background-color: #EFE8D9;
+  background-image: url("photos/pexels-lorenzo-242236.jpg");
   margin: 0 auto;
   margin-bottom: 30px;
   border: 2px double black;
