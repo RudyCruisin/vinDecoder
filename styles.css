@@ -1,0 +1,131 @@
+html {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    background-color:#527077;
+    background-image: url("photos/pexels-mudassir-ali-2680270.jpg");
+  }
+  
+  header {
+    height: 60px;
+    background-color: #242428;
+    box-shadow: 0 0 10px #000;
+    font-weight: bolder;
+  }
+  
+  ul {
+    float: right;
+    position: relative;
+    right: 10%;
+  }
+  
+  ul li {
+    display: inline;
+    list-style: none;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 18px;
+    padding: 0px 0px 0px 20px;
+  }
+  
+  footer {
+    color: whitesmoke;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 60px;
+    background-color: #242428;
+    box-shadow: 0 0 10px #000;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bolder;
+  }
+
+  footer p {
+    text-transform: uppercase;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    font-size: 36px;
+    color: #EFE8D9;
+  }
+
+  h3, h2 {
+    color: #EFE8D9;
+  }
+
+  p a {
+    color:tomato;
+    text-decoration: none;
+  }
+
+  div {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .inputvin {
+    display: block;
+    margin: 20px auto;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 0 0 10px #666;
+    width: 240px;
+    height: 50px;
+    background-color: #f2f2f2;
+  }
+
+  .submitButton {
+    width: 240px;
+    height: 60px;
+    background-color: #242428;
+    color: #ffffff;
+  }
+
+table {
+  background-color: #EFE8D9;
+  background-image: url("photos/pexels-lorenzo-242236.jpg");
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border: 2px double black;
+  text-align: center;
+  border-spacing: 2px;
+  max-width: 90%;
+}
+
+td {
+  border: 1px solid black;  
+  min-width: 75px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+h3 {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.editdata {
+  background-color: #242428;
+  color:white;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  margin-top: 10px;
+
+  display: grid;
+}
+
