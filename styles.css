@@ -7,12 +7,14 @@ html {
   body {
     padding: 0;
     margin: 0;
+    background-color:#527077;
   }
   
   header {
     height: 60px;
-    background-color: #f2f2f2;
+    background-color: #242428;
     box-shadow: 0 0 10px #000;
+    font-weight: bolder;
   }
   
   ul {
@@ -28,20 +30,22 @@ html {
   
   ul li a {
     text-decoration: none;
-    color: #000000;
+    color: whitesmoke;
     font-size: 18px;
     padding: 0px 0px 0px 20px;
   }
   
   footer {
+    color: whitesmoke;
     position: absolute;
     bottom: 0%;
     width: 100%;
     height: 60px;
-    background-color: #f2f2f2;
+    background-color: #242428;
     box-shadow: 0 0 10px #000;
     text-align: center;
     margin: 0 auto;
+    font-weight: bolder;
   }
 
   footer p {
@@ -51,10 +55,16 @@ html {
   h1 {
     text-transform: uppercase;
     font-size: 36px;
+    color: #EFE8D9;
+  }
+
+  h3, h2 {
+    color: #EFE8D9;
   }
 
   p a {
-    color: #666;
+    color:tomato;
+    text-decoration: none;
   }
 
   div {
@@ -77,12 +87,14 @@ html {
   .submitButton {
     width: 240px;
     height: 60px;
-    background-color: #000000;
+    background-color: #242428;
     color: #ffffff;
   }
 
 table {
+  background-color: #EFE8D9;
   margin: 0 auto;
+  margin-bottom: 30px;
   border: 2px double black;
   text-align: center;
   border-spacing: 2px;
@@ -105,13 +117,13 @@ h3 {
 }
 
 .editdata {
-  background-color: white;
-  width: 40px;
-  height: 20px;
-  color: black;
-}
-
-.editvalues {
+  background-color: #242428;
+  color:white;
+  width: 100%;
+  padding: 5px;
   text-align: center;
+  margin-top: 10px;
+
+  display: grid;
 }
 
