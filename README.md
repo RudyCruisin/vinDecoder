@@ -5,7 +5,7 @@ https://vpic.nhtsa.dot.gov/api/
 VINs for testing were randomly selected from https://www.carmax.com
 
 # use to build table in mySQL
- CREATE TABLE IF NOT EXISTS `vinList`(
+CREATE TABLE IF NOT EXISTS `vinList`(
      `vin` VARCHAR(255) NOT NULL, 
      `make` VARCHAR(255), 
      `model` VARCHAR(255), 

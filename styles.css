@@ -63,7 +63,7 @@ html {
     text-align: center;
   }
 
-  input {
+  .inputvin {
     display: block;
     margin: 20px auto;
     font-size: 16px;
@@ -74,7 +74,7 @@ html {
     background-color: #f2f2f2;
   }
 
-  button {
+  .submitButton {
     width: 240px;
     height: 60px;
     background-color: #000000;
@@ -102,4 +102,15 @@ h3 {
   width: 70%;
   margin: 0 auto;
   margin-bottom: 20px;
+}
+
+.editdata {
+  background-color: white;
+  width: 40px;
+  height: 20px;
+  color: black;
+}
+
+.editvalues {
+  text-align: center;
 }

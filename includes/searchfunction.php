@@ -60,6 +60,6 @@ if (empty($vinnumber)) {
 
 <div class="buttons">
     <form method="post">
-        <button type="submit" name="writeData">Add to Database</button>
+        <button class="submitButton" type="submit" name="writeData">Add to Database</button>
     </form>
 </div>
