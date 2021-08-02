@@ -46,20 +46,34 @@ if (empty($vinnumber)) {
 
     //Creating a table display of values from NHTSA API for user submitted VIN number
 
-    echo "<div><h3>{$decoded['Message']}</h3></div>";
-
-    echo "<table>";
-    echo "<tr><td>VIN</td><td>{$vinnumber}</td></tr>\n";
-    for ($i = 0; $i < count($vin_value_array); $i++) {
-        echo "<tr><td>" . $vin_data_array[$vin_value_array[$i]]['Variable'] . "</td><td>" . $vin_data_array[$vin_value_array[$i]]['Value'] . "</td></tr>";
-    }
-    echo "</table>";
-}
-
 ?>
 
-<div class="buttons">
-    <form method="post">
-        <button class="submitButton" type="submit" name="writeData">Add to Database</button>
-    </form>
-</div>
+    <div>
+        <h3><?php echo $decoded['Message'] ?></h3>
+        <div>
+            <form class="updateform" method="POST">
+                <table class="table table-sm searchtable">
+                    <tbody>
+                        <tr>
+                            <td class="align-middle">VIN</td>
+                            <td class="align-middle"><?php echo $vinnumber ?></td>
+                            <?php 
+                            for ($i = 0; $i < count($vin_value_array); $i++) {
+                                echo "<tr><td class=align-middle>" . $vin_data_array[$vin_value_array[$i]]['Variable'] . "</td><td class=align-middle>" . $vin_data_array[$vin_value_array[$i]]['Value'] . "</td></tr>";
+                            }
+                            ?>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+
+    <?php
+}
+
+    ?>
+
+    <div class="buttons">
+        <form method="post">
+            <button class="submitButton" type="submit" name="writeData">Add to Database</button>
+        </form>
+    </div>
