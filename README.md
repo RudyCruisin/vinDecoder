@@ -32,23 +32,23 @@ Enter your VIN in the input field and click the "Search" button.
 
 ![Home page](photos/index.png)
 
-You will then have a table displayed with categories and values relating the input VIN. This data can be added to your database with the "Add to Database" button.
+A table will be displayed with categories and values relating the input VIN. This data can be added to the local database with the "Add to Database" button.
 
 ![Searching for a VIN](photos/vinsearch.png)
 
-Clicking the "Data" link in the header will display a table with all the contents of your database. 
+Clicking the "Data" link in the header will display a table with all the contents of the local DB. 
 
 ![VIN and parameters added to DB](photos/addeddatabase.png)
 
-And we can compare to our PHP local DB:
+Site values can be compare to the local PHP DB interface:
 
 ![View of Local DB](photos/phpTable.png)
 
-Clicking the edit button will display another table with inputs that allows you to modify the data for that entry. 
+Clicking the edit button will display another table with inputs that allow modifying the data for that entry. 
 
 ![Display of Modify Table with existing values](photos/modifytable.png)
 
-Data values will be updated with values in "New Value" fields when clicking the "Update Database" button.
+Data values will be updated from contents of inputs in the "New Value" column when clicking the "Update Database" button.
 
 ![New values in Modify Table](photos/modifynewvalues.png)
 
@@ -56,7 +56,7 @@ Clicking the "Update Database" button will return you to the "Data" page and the
 
 ![Database view with modified values](photos/databasemodified.png)
 
-Here we can compare changes on our PHP local DB.
+Here we can compare changes on the local PHP DB interface.
 
 ![PHP DB with modified values](photos/phpTablemodified.png)
 
@@ -64,6 +64,6 @@ Returning to edit the same VIN. The "Delete From Database" button will remove th
 
 ![PHP DB with modified values](photos/databasedeleted.png)
 
-Here we can compare with local PHP DB and see that the VIN and associated values have been removed.
+Here we can compare with local PHP DB interface and see that the VIN and associated values have been removed.
 
 ![PHP DB with modified values](photos/phpTabledeleted.png)
