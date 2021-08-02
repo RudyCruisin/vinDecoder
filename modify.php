@@ -4,19 +4,16 @@ require 'includes/database.php';
 ?>
 
 <?php
-
 //Querying database to match selected vin from edit button.
 //Variables associated with vin are displayed into a table with an input to modify them.
-
 $sql = "SELECT * FROM vinlist WHERE vin = '{$_SESSION['editvin']}'";
 $result = mysqli_query($conn, $sql) or die("Bad Query: $sql");
 $row = mysqli_fetch_assoc($result);
 $arraytable = ['vin', 'make', 'model', 'modelYear', 'trim', 'bodyClass', 'cabType', 'driveType', 'transmissionStyle', 'frontAirbagLocation', 'sideAirbagLocation'];
-
 ?>
 
 <div>
-        <h2>Values for VIN - <?php echo $row[$arraytable[0]]; ?></h2>
+        <h2>Values for VIN - <?php echo $row[$arraytable[0]];?></h2>
         <form class="updateform" method="POST">
             <table class="table table-sm">
                 <thead class = "thead-dark"><tr><th scope="col">Category</th><th scope="col">Current Value</th><th scope="col">New Value</th></tr></thead>
@@ -38,11 +35,11 @@ $arraytable = ['vin', 'make', 'model', 'modelYear', 'trim', 'bodyClass', 'cabTyp
 
 <div class="buttons">
     <form method="get">
-        <button class="submitButton" type="submit" action="index.php" name="deleteData">Delete from Database</button>
+        <button class="submitButton" type="submit" name="deleteData">Delete from Database</button>
     </form>
 </div>
 
-<?php
+<?php 
 //Update button updates table with values in input fields.
 if (isset($_POST['updateData'])) {
     $sql3 = "UPDATE vinlist SET make='$_POST[updatemake]',model='$_POST[updatemodel]',modelYear='$_POST[updatemodelYear]',trim='$_POST[updatetrim]',bodyClass='$_POST[updatebodyClass]',cabType='$_POST[updatecabType]',driveType='$_POST[updatedriveType]',transmissionStyle='$_POST[updatetransmissionStyle]',frontAirbagLocation='$_POST[updatefrontAirbagLocation]',sideAirbagLocation='$_POST[updatesideAirbagLocation]' WHERE vin = '{$_SESSION['editvin']}'";
