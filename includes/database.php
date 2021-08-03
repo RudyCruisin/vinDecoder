@@ -20,10 +20,8 @@ $query_builder = TRUE;
 
 // Connect to DB
 $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
-?>
 
 if (!$conn) {
     die("The connection to the database as failed!");
 }
-
 ?>
